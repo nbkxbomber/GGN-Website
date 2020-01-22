@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>GGN Productions</title>
+</head>
+
+<!--Menu Button-->
+
+<body>
+
+    <div class="topbar">
+        <ul>
+            <li id="highlight">514-829-2002&nbsp;&nbsp;&nbsp;</li>
+            <li>BOOK YOUR EVENT TODAY:&nbsp;</li>
+
+        </ul>
+    </div>
+
+    <nav>
+        <!--Menu Design-->
+        <div class="hamburger" onclick="myFunction(this)">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+        <!--Menu Links-->
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Events">Events</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Website Body-->
+    <div class="maincontent">
+        <!--Website Homepage-->
+        <div>
+            <section id="home" class="landing">
+                <img src="./img/Homepage%20Logo.png" alt="Company Homepage Logo" class="respo" />
+            </section>
+        </div>
+        <!--Website About page-->
+        <div>
+            <section id="about">
+                <h1>About GGN Productions</h1>
+                <p>
+                    From creating it to experiencing it, GGN Productions offers a creative outlook in the Quebec entertainment scene delivering an optimal entertainment service for a wide range of organized events. Our innovative team stays ahead of entertainment trends, together with the best experience for every event. Whether big or small it will always be a one-of-a-kind production. We pride ourselves on designing unforgettable moments and curating experiences you don’t want to forget.
+                </p>
+            </section>
+        </div>
+        <!--Website Event page-->
+        <section id="events">
+
+            <img src="./img/Promo1.JPG" alt="PromoPic" class="promoimage" />
+
+            <!--<div class="promodes">
+                <p class="desalign">G.G.N. Productions presents a Laval based comedy show that will take place on May 15, 2020. Greek YouTube sensation Yannis Pappas, (as the Greek stereotype Mr. Panos) and Australian Greek comedian Jim Dailakis (who performed in the Just For Laughs Festival this past summer). The Yannis Pappas Show will be held at the Embassy Plaza (1003 Boulevard Curé-Labelle, Laval, QC H7V 2V6). This event will start at 7:30 PM and will end at 11:30 PM.</p>
+            </div>-->
+
+        </section>
+
+        <!--Website Contact page-->
+        <section id="contact">
+            <a href="mailto:groupe.ggn@gmail.com">Contact</a>
+        </section>
+    </div>
+    <!--JS Menu Animation-->
+    <script src="./js/app.js"></script>
+
+    <!--JS Hamburger Animation-->
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+
+    </script>
+
+    <!--Website Footer-->
+    <div id="footer">
+        <p>© GGN Productions 2020</p>
+    </div>
+</body>
+
+</html>
