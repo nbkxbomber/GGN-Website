@@ -32,8 +32,12 @@ nav {
     margin-right: auto;
 }
 
+.nav-links li {
+    color: #fff;
+}
+
 .nav-links li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-size: 25px;
 }
@@ -48,9 +52,9 @@ nav {
 }
 
 #home img {
-    width: 100%;
+    width: 110%;
     height: auto;
-    padding-bottom: 5%;
+    padding-bottom: 6%;
 }
 
 li a:hover {
@@ -77,17 +81,19 @@ section h1 {
     font-size: 4rem;
     color: white;
     text-decoration: none;
+    text-align: center;
 }
 
 section p {
     font-size: 1.2rem;
+    text-align: center;
 }
 
 #footer {
     text-align: center;
     color: white;
     background: black;
-    font: 11px;
+    font: 10px;
 }
 
 #home {
@@ -104,7 +110,11 @@ section p {
 }
 
 #events {
-    background-color: mediumslateblue;
+    background-color: orange;
+}
+
+#sponsors{
+	background-color: red;
 }
 
 #contact a {
@@ -136,8 +146,9 @@ section p {
 }
 
 .promoimage {
-    height: auto;
     width: 30%;
+    height: auto;
+    border: 6px solid white;
 }
 
 .promodes {
@@ -149,6 +160,11 @@ section p {
 
 /*Smartphone Media Formatting*/
 @media screen and (max-width: 768px) {
+
+    html {
+        font-size: 12px;
+    }
+
     .line {
         width: 30px;
         height: 3px;
@@ -170,7 +186,7 @@ section p {
     }
 
     .nav-links {
-        position: fixed;
+        position: absolute;
         background: black;
         height: 100vh;
         width: 100%;
@@ -216,11 +232,19 @@ section p {
         opacity: 1;
     }
 
-
     #home img {
-        padding-bottom: 60%;
+        display: block;
+        padding-bottom: 18em;
     }
 
+    .promoimage {
+        width: 95%;
+        height: auto;
+        text-align: center;
+        border: solid;
+        border-width: 3px;
+        border-color: white;
+    }
 
     /*Exit Animation Style*/
     .line1,
@@ -246,3 +270,4 @@ section p {
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
     }
+}
